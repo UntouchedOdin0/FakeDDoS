@@ -1,0 +1,8 @@
+name: FakeDDoS
+main: net.spaicygaming.fakeddos.Main
+version: 1.0
+author: SpaicyGaming
+description: Troll players with FakeDDoS!
+commands:
+   ddos:
+     description: DDoS a player.
