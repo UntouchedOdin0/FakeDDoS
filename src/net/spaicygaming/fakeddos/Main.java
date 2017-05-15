@@ -77,8 +77,8 @@ public class Main extends JavaPlugin implements Listener {
 									CraftPlayer craftplayer = (CraftPlayer) target;
 									PlayerConnection connection = craftplayer.getHandle().playerConnection;
 																		
-									IChatBaseComponent chatTitle = ChatSerializer.a("{\"text\":\"" + ChatColor.DARK_RED + ChatColor.BOLD + getConfig().getString("UnderAttacTitle") + "\"}");
-									IChatBaseComponent chatSubTitle = ChatSerializer.a("{\"text\":\"" + getConfig().getString("UnderAttacSubtitle").replaceAll("%SENDER", sender.getName().toString()) + "\"}");
+									IChatBaseComponent chatTitle = ChatSerializer.a("{\"text\":\"" + ChatColor.DARK_RED + ChatColor.BOLD + getConfig().getString("UnderAttackTitle") + "\"}");
+									IChatBaseComponent chatSubTitle = ChatSerializer.a("{\"text\":\"" + getConfig().getString("UnderAttackSubtitle").replaceAll("%SENDER", sender.getName().toString()) + "\"}");
 									PacketPlayOutTitle title = new PacketPlayOutTitle(EnumTitleAction.TITLE, chatTitle);
 									PacketPlayOutTitle subtitle = new PacketPlayOutTitle(EnumTitleAction.SUBTITLE, chatSubTitle);
 									connection.sendPacket(title);
