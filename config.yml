@@ -8,7 +8,8 @@
 NoArgsMessage: Use /ddos [player]
 
 #To use /ddos command you need the permission "fakeddos.use"
-NoPermissionMessage: Sorry, you don't have enough permissions.
+NoDDoSPermissions: Sorry, you don't have enough permissions.
+NoReloadPermissions: Sorry, you don't have the permission 'fakeddos.reload'.
 
 #This message will be displayed if a player try to ddos himself
 AutoDDoSMessage: You can't DDoS yourself!
@@ -21,13 +22,18 @@ UnderAttacSubtitle: From %SENDER
 SentDDoSMessage: You dossed %TARGET
 TargetOffline: The player "%TARGET" is not Online.
 
-#Sounds Control
-PlaySounds-Target: true
-PlaySounds-Sender: true
+Effects:
+  Target:
+    Sounds: true
+    Particles: true
+  Sender:
+    Sounds: true
+    Particles: true
 
 #This message will be displayed if the console try to use /ddos command
 OnlyPlayerCmd: This command can only be run by a player.
-
+WrongCommand: This command does not exist. Please use /fakeddos.
+TooManyArgs: Too many args.
 
 ####DO NOT TOUCH###
-ConfigVersion: 1.0 
+ConfigVersion: 1.1
